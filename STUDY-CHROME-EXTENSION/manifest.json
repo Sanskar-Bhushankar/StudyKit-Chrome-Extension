@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "1integrate",
+  "version": "1.0",
+  "description": "Capture YouTube tab link",
+  "permissions": ["tabs","storage", "activeTab", "downloads","scripting"],
+
+  "icons":{
+    "128":"images/logo.png"
+  },
+
+  "action": {
+    "default_popup": "dashboard.html"
+    
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "images/bookmark.png"
+      ],
+      "matches": ["https://*.youtube.com/*"]
+    }
+  ],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html"
+
+}

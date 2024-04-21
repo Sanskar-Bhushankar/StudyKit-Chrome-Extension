@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="websum.js"></script>
+    <style>
+      button {
+          color: white;
+          background-color: #9336e5;
+          border: none;
+          border-radius: 3px;
+          margin: 5px;
+          border: 3px solid white;
+          font-size: 18px;
+      }
+      button:hover {
+          cursor: pointer;
+      }
+      #button-container {
+          float: right;
+          margin-top: -40px;
+          margin-right: -25px;
+      }
+      #local-urls-scanned-count {
+          border-radius: 50%;
+          width: 310px;
+          height: 310px;
+          border: 30px solid #9336e5;
+          text-align: center;
+          font-family: "THICCBOI-Bold";
+          line-height: 310px;
+          margin: auto;
+      }
+      #url-count {
+          display: inline-block;
+          vertical-align: middle;
+      }
+      #urls-scanned-sub-text {
+          font-family: "THICCBOI";
+          font-size: 36px;
+          color: #717171;
+          text-align: center;
+          margin-top: 20px;
+      }
+      .sharing-button {
+          background-color: transparent;
+          border: none;
+          padding: 0;
+      }
+      .button-img {
+          width: 1.75rem;
+          height: 1.75rem;
+      }
+      .statistic {
+          text-align: center;
+          margin-top: 30px;
+          margin-bottom: 30px;
+          width: 242px;
+          height: 131px;
+      }
+      .statistic-header {
+          font-size: 16px;
+          font-family: "THICCBOI-bold";
+          color: #717171;
+      }
+      .statistic-value {
+          font-family: "THICCBOI";
+          color: #222222;
+          margin-top: 0;
+      }
+  </style>
+</head>
+<body>
+    <div>
+      <header>
+        <div id="header">
+          <!--<h1 data-value="studyBUddy! " class="title">studyBuddy</h1>-->
+          <div id="header-left">
+            <h1 data-value="SUMMARIZE.. " class="title">studyBuddy</h1>
+          </div>
+          <div id="header-right">
+            <ul>
+              <li id="dashboard-tab" class="tab">
+                <a href="dashboard.html">Screenshots</a>
+              </li>
+              <li id="earn-tab" class="tab tab-selected">
+                <a href="websum.html">summarize</a>
+              </li>
+              <li id="about-tab" class="tab">
+                <a href="youtube.html">Youtube</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+<div>
+  <div style="padding: 10px;">
+    <div id="pagesum">
+        <h1 class="custom-heading">Summarize this Page</h1>
+        <p style="font-size: medium; font-family:cursive">Make sure this is a article/blog for relavent summary</p>
+        <textarea id="gensum" rows="5" cols="75" style="background-color:rgba(10,28,50,1); color:antiquewhite">summary..</textarea>
+        <button id="websum">summarize page</button>
+      </div>
+    </div>
+  </div>
+    
+</body>
+</html>
